@@ -1,0 +1,21 @@
+.title {
+  animation: animationBur linear both;
+  animation-timeline: view();
+  transform: scale(0.4);
+  color: black;
+  font-size: 8rem;
+}
+@keyframes animationBur {
+  0% {
+    filter: blur(50px);
+  }
+  45%,
+  50% {
+    transform: scale(1.1);
+    filter: blur(0px);
+    color: red;
+  }
+  100% {
+    filter: blur(50px);
+  }
+}
